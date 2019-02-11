@@ -1,159 +1,919 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kadapalavandla palli</title>
-    <style>
-        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-        }
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="KVPalli, Tavalamarri" />
+    <meta name="description" content="KVPalli - Portfolio" />
+    <meta name="author" content="" />
 
-        .bgimg {
-            /* Background image */
-            background-image: url('./images/img1-min.jpg');
-            /* Full-screen */
-            height: 100%;
-            /* Center the background image */
-            background-position: center;
-            /* Scale and zoom in the image */
-            background-size: cover;
-            /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-            position: relative;
-            /* Add a white text color to all elements inside the .bgimg container */
-            color: white;
+    <!-- Title  -->
+    <title>KVPalli</title>
 
-            /* Add a font */
-            font-family: "Courier New", Courier, monospace;
-            /* Set the font-size to 25 pixels */
-            font-size: 25px;
-        }
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
-        /* Position text in the top-left corner */
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
 
-        .topleft {
-            position: absolute;
-            top: 7px;
-            left: 16px;
-        }
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
 
-        /* Position text in the bottom-left corner */
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        .bottomleft {
-            position: absolute;
-            bottom: 0;
-            left: 16px;
-        }
-
-        /* Position text in the middle */
-
-        .middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        /* Style the <hr> element */
-
-        hr {
-            margin: auto;
-            width: 40%;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
-
-        .header {
-            text-align: center;
-            padding: 32px;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%;
-            /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="bgimg">
-        <!-- <div class="topleft">
-        </div> -->
-        <!-- Photo Grid -->
-        <div class="row">
-            <div class="column">
-                <img src="./images/img1-min.jpg" style="width:100%">
+
+    <!-- =====================================
+    	==== Start Loading -->
+
+    <div class="loading">
+        <div class="text-center middle">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="column">
-                <img src="./images/img2-min.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="./images/img4-min.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="./images/img3-min.jpg" style="width:100%">
-            </div>
-        </div>
-        <div class="middle">
-            <h1>COMING SOON</h1>
-            
-            <!-- <p>35 days</p> -->
-        </div>
-        <div class="topleft">
-            <a href="#"><img src="./images/logo1-min.png" style="width:50%"></a>
         </div>
     </div>
+
+    <!-- End Loading ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="#">
+                <img src="img/logo-light.png" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="2">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="4">Cricket Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Header -->
+
+    <header class="header slider-fade" data-scroll-index="0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme full-width">
+                    <div class="text-center item bg-img" data-overlay-dark="5" data-background="img/bg1.jpg">
+
+                    </div>
+                    <div class="text-center item bg-img" data-overlay-dark="5" data-background="img/bg2.jpg">
+
+                    </div>
+                    <div class="text-center item bg-img" data-overlay-dark="5" data-background="img/bg4.jpg">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header ====
+    	======================================= -->
+
+
+
+    <!-- =====================================
+        ==== Start Hero -->
+
+    <section class="hero section-padding" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+
+                <div class="intro offset-lg-1 col-lg-10 text-center mb-80">
+                    <h3>Welcome To KVPalli</h3>
+                    <h4>Who We Are And What Can We do?</h4>
+                    <p>We’re full service which means we’ve got you covered on design and content right through to
+                        digital. You’ll form a lasting relationship with us, collaboration is central to everything we
+                        do. We’ll push you out of your comfort zone from time-to-time, but this is where you’ll shine.
+                        Bottom line is we want you to succeed at Faculty.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="item text-center mb-md50">
+                        <span class="icon icon-basic-book-pen"></span>
+                        <h5>Creative Design</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="item text-center mb-md50">
+                        <span class="icon icon-basic-cards-diamonds"></span>
+                        <h5>Branding</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="item text-center">
+                        <span class="icon icon-basic-pencil-ruler"></span>
+                        <h5>Web Development</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Hero ====
+        ======================================= -->
+
+
+    <!-- =====================================
+        ==== Start Services -->
+
+    <section class="services section-padding" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head text-center col-sm-12">
+                    <h4>Our Services</h4>
+                    <h6>Awesome Featruse</h6>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-basic-book-pencil"></span>
+                        <h6>Creative Design</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 bord">
+                    <div class="item mb-md50">
+                        <span class="icon icon-basic-pencil-ruler"></span>
+                        <h6>User Experience</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-basic-anchor"></span>
+                        <h6>Customizability</h6>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-basic-picture"></span>
+                        <h6>Retina Ready</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 bord">
+                    <div class="item mb-sm50">
+                        <span class="icon icon-basic-ipod"></span>
+                        <h6>Fully Responsive</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon icon-basic-gear"></span>
+                        <h6>Custom Support</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Services ====
+        ======================================= -->
+
+
+    <!-- =====================================
+        ==== Start Works -->
+
+    <section class="works section-padding" data-scroll-index="3">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="section-head text-center col-sm-12">
+                    <h4>Creative Portfolio</h4>
+                    <h6>Latest Photos</h6>
+                </div>
+
+                <!-- filter links -->
+                <div class="filtering text-center mb-30 col-sm-12">
+                    <div class="filter">
+                        <span data-filter='*' class="active">All</span>
+                        <span data-filter='.brand'>Brand</span>
+                        <span data-filter='.web'>Design</span>
+                        <span data-filter='.graphic'>Graphic</span>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- gallery -->
+                <div class="gallery text-center full-width">
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/1.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/1.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items web">
+                        <div class="item-img">
+                            <img src="img/portfolio/2.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/2.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items brand">
+                        <div class="item-img">
+                            <img src="img/portfolio/3.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/3.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/4.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/4.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items web">
+                        <div class="item-img">
+                            <img src="img/portfolio/5.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/5.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items brand">
+                        <div class="item-img">
+                            <img src="img/portfolio/6.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/6.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items brand">
+                        <div class="item-img">
+                            <img src="img/portfolio/7.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/7.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/8.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/8.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/9.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/9.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-3 col-md-6 items graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/10.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width vertical-center">
+                                    <h6>Photography</h6>
+                                    <a href="img/portfolio/10.jpg" class="popimg">
+                                        <span class="icon icon-basic-eye"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Works ====
+        ======================================= -->
+
+    <!-- =====================================
+        ==== Start Teams -->
+
+    <section class="team section-padding" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head text-center col-sm-12">
+                    <h4>Our Team</h4>
+                    <h6>The Talent Crew</h6>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Venugopal Reddy</h6>
+                            <span>All Rounder</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/venu458458" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/malakavenu" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/venumalaka" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <p><a href="https://www.malakavenu.com" target="self" class="anchor">
+                                        malakavenu.com
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Hari Krishna</h6>
+                            <span>Batsman (S/R : 300)</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/profile.php?id=100008680778356" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Yogi</h6>
+                            <span>Bowler</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/suri.yogi.50" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>TR Reddeppa</h6>
+                            <span>All Rounder</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/tavalammarri.reddeppa" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Gnanendra Reddy</h6>
+                            <span>Batsman</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/gnanendrareddy.kadapala" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Suri</h6>
+                            <span>Batsman</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/sureshyougi" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>HariVardhan Reddy</h6>
+                            <span>Batsman</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/hari22114421" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Anji Gowd</h6>
+                            <span>Batsman (Opener)</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/anji.gowd.758" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/9.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Lokeshwar Reddy</h6>
+                            <span>Batsman</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/lokeswar.reddy.142" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/10.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>RV Anji</h6>
+                            <span>Fast Bowler</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/rv.anji" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/11.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Mahendra Reddy</h6>
+                            <span>Batsman (Hitter)</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/mahendrareddy.mahi" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item mb-50">
+                        <div class="team-img">
+                            <img src="img/team/12.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>Jinka Ramana</h6>
+                            <span>Fast Bowler</span>
+                            <div class="social">
+                                <a href="https://www.facebook.com/profile.php?id=100006457423381" target="self" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="self" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/" target="self" class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Teams ====
+        ======================================= -->
+    <!-- =====================================
+        ==== Start Contact-Info -->
+
+    <div class="contact-info section-box" data-scroll-index="6">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Contact Info -->
+
+                <div class="info bg-img col-md-4" data-overlay-dark="8" data-background="img/bg1.jpg">
+
+                    <div class="gradient">
+
+                        <div class="item">
+                            <span class="icon icon-basic-smartphone"></span>
+                            <div class="cont">
+                                <h6>Phone : </h6>
+                                <p>+91 9940450062</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <span class="icon icon-basic-geolocalize-05"></span>
+                            <div class="cont">
+                                <h6>Address : </h6>
+                                <p>Kadapalavandla Palli, Tavalamarri Post</p>
+                                <p>Nallachervu Mandal, Anantapur Dist. 515551</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <span class="icon icon-basic-mail"></span>
+                            <div class="cont">
+                                <h6>Email : </h6>
+                                <p>kvpalli@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/kvpalli" target="self" class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/kvpalli" target="self" class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- The Map -->
+
+                <div class="map col-md-8 bgimg-height-sm">
+                    <div id="ieatmaps"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Contact-Info ====
+        ======================================= -->
+
+
+
+    <!-- =====================================
+        ==== Start Contact -->
+
+    <section class="contact section-padding" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head text-center col-sm-12">
+                    <h4>Get In Touch</h4>
+                    <h6>Feel Free To Contact Us</h6>
+                </div>
+
+                <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
+                    <form class="form" id="contact-form" method="post" action="contact.php">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                                            required="required"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button type="submit"><span>Send Message</span></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact ====
+        ======================================= -->
+
+
+    <!-- =====================================
+        ==== Start Footer -->
+
+    <footer class="text-center">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="#">
+                <img src="img/logo-light.png" alt="logo">
+            </a>
+
+            <div class="social">
+                <a href="https://www.facebook.com/kvpalli" target="self" class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com/kvpalli" target="self" class="icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#0" class="icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <p>&copy; 2019. All Rights Reserved.</p>
+
+        </div>
+    </footer>
+
+    <!-- End Footer ====
+        ======================================= -->
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- jquery.waypoints.min -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- YouTubePopUp.jquery -->
+    <script src="js/YouTubePopUp.jquery.js"></script>
+
+    <!-- Map -->
+    <script src="js/map.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- google map api -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB955Qm3UIOjKf8UGmAC0EcqFRcVDVrBXE&callback=initMap">
+    </script>
+
 </body>
 
 </html>
