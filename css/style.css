@@ -1873,5 +1873,6 @@ footer p {
 @media only screen and (max-width: 600px) {
   .team .item .info {
     padding: 15px 15px 15px 0;
+    margin-top: 10px;
   }
 }
