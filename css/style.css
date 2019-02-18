@@ -389,6 +389,7 @@ a:hover {
 .slider-fade .owl-item {
   height: 100vh;
   position: relative;
+  background: #555;
 }
 
 .slider .item,
@@ -399,6 +400,18 @@ a:hover {
   height: 100%;
   width: 100%;
   background-size: cover;
+}
+
+.slider .item,
+.slider-fade .item.custom-item {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-color: transparent;
+  margin: 0 auto;
 }
 
 .slider .item .caption,
@@ -1870,9 +1883,3 @@ footer p {
 }
 
 /*# sourceMappingURL=style.css.map */
-@media only screen and (max-width: 600px) {
-  .team .item .info {
-    padding: 15px 15px 15px 0;
-    margin-top: 10px;
-  }
-}
